@@ -9,7 +9,8 @@ const UserSchema = new Schema({
     lastName: String,
     createdAt: { type: Date, default: new Date() },
     enabled: { type: Boolean, default: true },
-    token: String
+    token: String,
+    emailIsVerified: Boolean
 });
 
 const UserModel = model('Users', UserSchema);
